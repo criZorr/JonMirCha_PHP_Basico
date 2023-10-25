@@ -31,11 +31,21 @@
         </div>
         <div>
             <label for="pais">Pais: </label>
-            <select name="pais_slc" id="pais" class="cambio">
-                <option value="">- - - - -</option>
+            <select name="pais_slc" id="pais" class="cambio" required>
+                <option value="">- - - - - - - - - - - -</option>
                 <?php include("select-pais.php"); ?>
             </select>
         </div>
-    </fieldset>
+        <div>
+            <label for="foto">Foto: </label>
+            <div class="adjuntar-archivo cambio">
+                <input type="file" id="foto" name="foto_fls" title="Sube tu foto">
+            </div>
 
+        </div>
+        <div>
+            <input type="submit" id="enviar-alta" class="cambio" name="enviar_btn" value="agregar">
+        </div>
+        <?php include("php/mensajes.php") ?>
+    </fieldset>
 </form>

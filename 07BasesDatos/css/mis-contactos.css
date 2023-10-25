@@ -28,6 +28,64 @@ body{
     font-size: 16px;
 }
 
+fieldset{
+    border: .1em solid #F60;
+    border-radius: .5em;
+    padding: 1em;
+}
+
+form{
+    display: none;
+}
+
+form div{
+    margin: .5em;
+}
+
+input[type="checkbox"], input[type="radio"], select{
+    background: #eee;
+    cursor: pointer;
+}
+
+input[type="date"], input[type="email"], input[type="number"], input[type="text"]{
+    background: #eee;
+    border-radius: .25em;
+    color: #f60;
+    font-size: 1em;
+    padding: .25em;
+}
+
+input[type="date"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="text"]:focus{
+    background: #c6ecf9;
+}
+
+input[type="file"]{
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 150px;
+}
+
+input[type="submit"]{
+    background: #ff9a55;
+    border-radius: 0 .25em;
+    color: #500;
+    font-family: "chalet";
+    font-size: 1.5em;
+}
+
+input[type="submit"]:hover{
+    background: #7BBFD5;
+    border-radius: .25em 0;
+    color: #000;
+    cursor:pointer;
+}
+
+label{
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
 nav, #principal{
     box-sizing: border-box;
     display: inline-block;
@@ -49,6 +107,19 @@ ul{
 
 #principal{
     width: 75%;
+}
+
+.adjuntar-archivo{
+    background: #eee url(../img/boton-buscar.png) no-repeat 100%;
+    border: thin solid #f60;
+    display: inline;
+    height: 290px;
+    text-align: right;
+}
+
+.adjuntar-archivo:hover{
+    background: #c6ecf9 url(../img/boton-buscar2.png) no-repeat 100%;
+    cursor: pointer;
 }
 
 .cambio{

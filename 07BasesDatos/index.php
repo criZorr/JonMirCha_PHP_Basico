@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
+error_reporting(E_ALL ^ E_NOTICE);
 $op = $_GET["op"];
 switch ($op) {
     case "alta":
@@ -35,6 +35,10 @@ switch ($op) {
         <?php echo $titulo; ?>
     </title>
     <link rel="stylesheet" href="css/mis-contactos.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+        !window.jQuery && document.write("<script src='js/jquery.min.js'><\/script>")
+    </script>
     <script src="js/mis-contactos.js"></script>
 </head>
 
