@@ -1,0 +1,56 @@
+*{
+    border: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Chalet";
+    src: url(../fonts/Chalet.eot);
+    src: url(../fonts/Chalet.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Chalet.woff) format("woff"),
+    url(../fonts/Chalet.ttf) format("truetype"),
+    url(../fonts/Chalet.svg#Chalet) format("svg");
+}
+
+a{
+    color: #F60;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #7BBFD5;
+}
+
+body{
+    background: #FFF;
+    color: #212121;
+    font-family: "Chalet", Helvetica, Verdana;
+    font-size: 16px;
+}
+
+nav, #principal{
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 1em;
+    margin: .25em;
+    text-align: left;
+    width: 20%;
+    vertical-align: top;
+}
+
+ul{
+    list-style: none;
+}
+
+#contenido{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#principal{
+    width: 75%;
+}
+
+.cambio{
+    transition: all 0.25s ease-out;
+}
