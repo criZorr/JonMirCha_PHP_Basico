@@ -1,0 +1,1 @@
+<p>consulta tipo buscador</p>
