@@ -1,9 +1,13 @@
 <?php
-include("conexion.php");
+if (!$registro_contacto["pais"])
+    include("conexion.php");
 $consulta = "SELECT * FROM pais ORDER BY pais";
 $ejecutar_consulta = $conexion->query($consulta);
 
 while ($registro = $ejecutar_consulta->fetch_assoc()) {
-    echo "<option value='" . $registro["pais"] . "'>" . $registro["pais"] . "</option>";
+    echo "<option value='" . $registro["pais"] . "'";
+    if ($registro["pais"] == $registro_contacto["pais"])
+        echo " selected";
+    echo ">" . $registro["pais"] . "</option>";
 }
 ?>

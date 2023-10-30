@@ -7,7 +7,7 @@ $nacimiento = $_POST["nacimiento_txt"];
 $telefono = $_POST["telefono_txt"];
 $pais = $_POST["pais_slc"];
 
-$imagen_generica = ($sexo == "M") ? "img/fotos/amigo.png" : "img/fotos/amiga.png";
+$imagen_generica = ($sexo == "M") ? "amigo.png" : "amiga.png";
 
 //Verificamos que no exista el email en la BD
 
