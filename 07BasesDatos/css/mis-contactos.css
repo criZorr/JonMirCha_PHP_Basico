@@ -129,3 +129,13 @@ ul{
 .cambio{
     transition: all 0.25s ease-out;
 }
+
+.mensajes{
+    background: #323232;
+    border-radius: .5em;
+    border-color: yellow;
+    color: #000;
+    font-family: Helvetica, Verdana;
+    font-size: 1em;
+    padding: .5em;
+}
